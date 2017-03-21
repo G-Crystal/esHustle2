@@ -1,0 +1,77 @@
+.form-ctrl {
+    line-height: 34px;
+    margin-bottom: 5px;
+}
+
+.small-box .icon {
+    width: 90px;
+    text-align: center;
+}
+
+div.dataTables_wrapper > div:nth-child(2) > div {
+    overflow: auto;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #e0e0e0 !important;
+}
+
+.table-bordered > thead > tr,
+.table-bordered > tfoot > tr {
+    background-color: #e8e8e8;
+}
+
+.table-bordered > tbody > tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-bordered > tbody > tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.td-button-group {
+    display: inline-flex;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #97a0b3;
+    text-decoration: none;
+}
+
+.open .btn-box-tool, .btn-box-tool:hover {
+    color: #97a0b3;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-footer {
+    border-top-color: #e5e5e5;
+}
+
+.table-div {
+    display: table;
+}
+
+.table-cell-div {
+    display: table-cell;
+}
+
+.form-horizontal .control-label {
+    padding-top: 0;
+}
+
+.form-horizontal div.checkbox {
+    padding-top: 0;
+}
+
+div.checkbox input[type="checkbox"] {
+    height: 34px;
+    margin-top: 0;
+}
