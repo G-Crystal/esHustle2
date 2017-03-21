@@ -13,16 +13,16 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="resources/assets/plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="/assets/plugins/datatables/dataTables.bootstrap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="resources/assets/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/assets/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="resources/assets/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/assets/css/skins/_all-skins.min.css">
   
   <!-- Custom style -->
-  <link rel="stylesheet" href="resources/assets/css/header.css">
-  <link rel="stylesheet" href="resources/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -47,13 +47,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="resources/assets/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="/assets/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="resources/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -89,12 +89,12 @@
           </a>
         </li>
         <li>
-          <a href="{{ URL::to('option') }}">
+          <a href="/option">
             <i class="fa fa-edit"></i> <span>OptionAA</span>
           </a>
         </li>
         <li>
-          <a href="{{ URL::to('support') }}">
+          <a href="/support">
             <i class="fa fa-life-ring"></i> <span>Support</span>
           </a>
         </li>
@@ -484,11 +484,11 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="resources/assets/plugins/datatables/jquery.dataTables.js"></script>
-<script src="resources/assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="/assets/plugins/datatables/jquery.dataTables.js"></script>
+<script src="/assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
 <!-- AdminLTE App -->
-<script src="resources/assets/js/app.min.js"></script>
+<script src="/assets/js/app.min.js"></script>
 <!-- page script -->
 <script>
   $(function () {
