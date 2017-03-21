@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 // Route::get('/home', function () {
-//     return view('home.home');
+//     return view('home.view');
 // });
 
 Route::any('home', 'HomeController@view');
