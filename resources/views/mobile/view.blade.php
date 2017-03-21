@@ -1,111 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+@extends('layouts.master')
+
+@section('head_css')
   <!-- DataTables -->
   <link rel="stylesheet" href="/assets/plugins/datatables/dataTables.bootstrap.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="/assets/css/skins/_all-skins.min.css">
-  
-  <!-- Custom style -->
-  <link rel="stylesheet" href="/assets/css/header.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+@stop
 
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">es<b>H</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">es<b>Hustle</b></span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="/assets/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
-        <li>
-          <a href="/home">
-            <i class="fa fa-home"></i> <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="/mobile">
-            <i class="fa fa-mobile"></i> <span>Mobile App</span>
-          </a>
-        </li>
-        <li>
-          <a href="/option">
-            <i class="fa fa-edit"></i> <span>OptionAA</span>
-          </a>
-        </li>
-        <li>
-          <a href="/support">
-            <i class="fa fa-life-ring"></i> <span>Support</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+@section('content')
     <section class="content-header">
       <h1>Mobile App</h1>
     </section>
@@ -148,42 +48,61 @@
                     <td>Yes</td>
                     <td>Yes</td>
                     <td>Win 95+</td>
-                    <td>X</td>
+                    <td class="text-center">X</td>
                     <td>Win 95+</td>
-                    <td> 4</td>
-                    <td class="td-button-group">
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false">
+                    <td class="text-center"> 4</td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#updatePassword" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#modifyPassword" aria-expanded="false" title="Modify Password">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="collapse" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="collapse" aria-expanded="false" title="Remove Mobile App">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>name1</td>
+                    <td>Internet</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Win 95+</td>
+                    <td class="text-center">X</td>
+                    <td>Win 95+</td>
+                    <td class="text-center"> 4</td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
+                        <i class="fa fa-gear" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#modifyPassword" aria-expanded="false" title="Modify Password">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="collapse" aria-expanded="false" title="Remove Mobile App">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                       </button>
                     </td>
                   </tr>
                   <tr>
                     <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>No</button>
-                    </td>
-                    <td>C</td>
-                    <td>Win 95+</td>
+                    <td>Explorer 5.0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
                     <td>5</td>
-                    <td>C</td>
+                    <td class="text-center">C</td>
                     <td>Win 95+</td>
-                    <td>5</td>
-                    <td class="td-button-group">
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <td class="text-center">5</td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#modifyPassword" aria-expanded="false" title="Modify Password">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="collapse" aria-expanded="false" title="Remove Mobile App">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                       </button>
                     </td>
@@ -197,17 +116,17 @@
                     <td>C</td>
                     <td>Win 95+</td>
                     <td>6</td>
-                    <td>C</td>
+                    <td class="text-center">C</td>
                     <td>Win 95+</td>
-                    <td>5</td>
-                    <td class="td-button-group">
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <td class="text-center">5</td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#modifyPassword" aria-expanded="false" title="Modify Password">
                         <i class="fa fa-lock" aria-hidden="true"></i>
                       </button>
-                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="collapse" aria-expanded="false" title="Remove Mobile App">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                       </button>
                     </td>
@@ -248,13 +167,13 @@
     </section>
     <!-- /.content -->
 
-    <!-- Modal -->
+    <!-- Add App Modal -->
     <div class="modal fade" id="newApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Mobile App</h4>
+            <h4 class="modal-title" id="myModalLabel">Add Mobile App</h4>
           </div>
           <div class="modal-body form-ctrl">
             <form class="form-horizontal">
@@ -363,13 +282,13 @@
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Edit App Modal -->
     <div class="modal fade" id="editApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Mobile App</h4>
+            <h4 class="modal-title" id="myModalLabel">Edit Mobile App</h4>
           </div>
           <div class="modal-body form-ctrl">
             <form class="form-horizontal">
@@ -465,30 +384,50 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer text-center">
-    <strong>Copyright &copy; 2017 <a href="http://www.eshustle.com">esHustle</a>.</strong> All rights reserved.
-  </footer>
-</div>
-<!-- ./wrapper -->
 
-<!-- jQuery 2.2.4 -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<!-- jQuery UI 1.12.0 -->
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
-<!-- Bootstrap 3.3.7 -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Modify Password Modal -->
+    <div class="modal fade" id="modifyPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modify Password</h4>
+          </div>
+          <div class="modal-body form-ctrl">
+            <form class="form-horizontal">
+              <div class="box-body">
+                <div class="form-group form-ctrl">
+                  <label for="inputPassword" class="col-sm-4 control-label">Password</label>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group form-ctrl">
+                  <label for="inputConfirmPassword" class="col-sm-4 control-label">Confirm Password</label>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control" id="inputCfmPassword" placeholder="Confirm Password">
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+@stop
+
+@section('head_js')
 <!-- DataTables -->
 <script src="/assets/plugins/datatables/jquery.dataTables.js"></script>
 <script src="/assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+@stop
 
-<!-- AdminLTE App -->
-<script src="/assets/js/app.min.js"></script>
+@section('bodyend')
 <!-- page script -->
 <script>
   $(function () {
@@ -531,5 +470,4 @@
     });
   });
 </script>
-</body>
-</html>
+@stop
