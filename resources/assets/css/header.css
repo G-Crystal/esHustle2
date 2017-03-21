@@ -1,0 +1,7 @@
+.navbar-nav>.user-menu>.dropdown-menu {
+    width: 170px;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+    height: 110px;
+}
