@@ -77,22 +77,22 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="{{ URL::to('home') }}">
+          <a href="/home">
             <i class="fa fa-home"></i> <span>Home</span>
           </a>
         </li>
         <li>
-          <a href="{{ URL::to('mobile') }}">
+          <a href="/mobile">
             <i class="fa fa-mobile"></i> <span>Mobile App</span>
           </a>
         </li>
         <li>
-          <a href="{{ URL::to('option') }}">
+          <a href="/option">
             <i class="fa fa-edit"></i> <span>OptionAA</span>
           </a>
         </li>
         <li>
-          <a href="{{ URL::to('support') }}">
+          <a href="/support">
             <i class="fa fa-life-ring"></i> <span>Support</span>
           </a>
         </li>

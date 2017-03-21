@@ -13,23 +13,23 @@ class HomeController extends Controller
     */
 
     /**
-     * Log the user out of the application.
+     * index.
      *
      * @return Response
      */
     public function index()
     {
-        $this->getHome();
+        $this->view();
     }
 
     /**
-     * Log the user out of the application.
+     * Load Home page
      *
      * @return Response
      */
-    public function home()
+    public function view()
     {
-        return view('home/home');
+        return view('home/view');
     }
 
 }

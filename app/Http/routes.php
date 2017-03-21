@@ -19,4 +19,6 @@ Route::get('/', function () {
 //     return view('home.home');
 // });
 
-Route::any('home', 'HomeController@home');
+Route::any('home', 'HomeController@view');
+
+Route::any('mobile', 'MobileController@view');
