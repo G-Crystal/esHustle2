@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
-@push('head_css')
+@section('head_css')
 
-@endpush
+@stop
 
 @section('content')
     <!-- Content Header (Page header) -->
@@ -27,6 +27,6 @@
     <!-- /.content -->
 @stop
 
-@push('head_js')
+@section('head_js')
 
-@endpush
+@stop
