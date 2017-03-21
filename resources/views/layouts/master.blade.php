@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	
+  @yield('head_css')
+
   <!-- Theme style -->
   <link rel="stylesheet" href="/assets/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -21,9 +24,6 @@
   <!-- Custom style -->
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-	
-  @yield('head_css')
-
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -106,7 +106,6 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     @yield('content')
     <!-- /.content -->
   </div>
@@ -132,6 +131,9 @@
 
 <!-- AdminLTE App -->
 <script src="/assets/js/app.min.js"></script>
+
+@yield('bodyend')
+
 
 </body>
 </html>
