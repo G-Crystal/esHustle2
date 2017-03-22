@@ -242,7 +242,7 @@
                   <div class="col-sm-offset-4 col-sm-8">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">Label Enable Secondary Marketplace
+                        <input type="checkbox" class="mt-11">Label Enable Secondary Marketplace
                       </label>
                     </div>
                   </div>
@@ -345,7 +345,7 @@
                   <div class="col-sm-offset-4 col-sm-8">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox">Label Enable Secondary Marketplace
+                        <input type="checkbox" class="mt-11">Label Enable Secondary Marketplace
                       </label>
                     </div>
                   </div>
