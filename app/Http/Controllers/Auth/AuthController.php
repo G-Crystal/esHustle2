@@ -65,6 +65,15 @@ class AuthController extends Controller
     }
 
     /**
+     * Login
+     *
+     */
+    protected function postlogin()
+    {
+        return true;
+    }
+
+    /**
      * Register
      *
      */

@@ -19,14 +19,16 @@ Route::get('/', function () {
 //     return view('home.view');
 // });
 
-Route::any('home', 'HomeController@view');
+Route::get('home', 'HomeController@view');
 
-Route::any('profile', 'ProfileController@view');
-Route::any('login', 'Auth\AuthController@login');
-Route::any('register', 'Auth.AuthController@register');
+Route::get('profile', 'ProfileController@view');
+Route::get('login', 'Auth\AuthController@login');
+Route::post('login', 'Auth\AuthController@postlogin');
+Route::get('register', 'Auth\AuthController@register');
+Route::post('register', 'Auth\AuthController@create');
 
-Route::any('mobile', 'MobileController@view');
+Route::get('mobile', 'MobileController@view');
 
-Route::any('option', 'OptionController@view');
+Route::get('option', 'OptionController@view');
 
-Route::any('support', 'SupportController@view');
+Route::get('support', 'SupportController@view');

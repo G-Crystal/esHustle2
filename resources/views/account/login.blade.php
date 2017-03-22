@@ -6,22 +6,24 @@
 
 @section('content')
 
-<div class="login-box">
-  <div class="login-logo">
-    <a href="/">es<b>Hustle</b></a>
-  </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="../../index2.html" method="post">
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+    <form action="/login" method="post">
+      <div class="form-group form-ctrl row">
+        <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+        <div class="col-sm-8">
+            <input type="email" class="form-control" placeholder="Email">
+            <span class="glyphicon glyphicon-envelope form-control-feedback mr-15"></span>
+        </div>
       </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      <div class="form-group form-ctrl row">
+        <label for="inputPassword" class="col-sm-4 control-label">Password</label>
+        <div class="col-sm-8">
+            <input type="password" class="form-control" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback mr-15"></span>
+        </div>
       </div>
       <div class="row">
         <div class="col-xs-8">
@@ -44,8 +46,6 @@
 
   </div>
   <!-- /.login-box-body -->
-</div>
-<!-- /.login-box -->
 
 @stop
 

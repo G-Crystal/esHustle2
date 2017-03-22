@@ -25,13 +25,16 @@
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body class="login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/">ez<b>Hustle</b></a>
+  </div>
 
 @yield('content')
 
 </div>
-<!-- ./wrapper -->
+<!-- /.login-box -->
 
 <!-- jQuery 2.2.4 -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
