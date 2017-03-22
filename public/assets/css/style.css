@@ -68,11 +68,14 @@ div.dataTables_wrapper > div:nth-child(2) > div {
     padding-top: 0;
 }
 
-div.checkbox input[type="checkbox"] {
-    height: 34px;
-    margin-top: 0;
-}
-
 div.table-overflow {
     overflow: auto;
+}
+
+.mt-11 {
+    margin-top: 11px !important;
+}
+
+.ml-20 {
+    margin-left: 20px;
 }

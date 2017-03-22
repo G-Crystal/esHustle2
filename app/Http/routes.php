@@ -22,6 +22,8 @@ Route::get('/', function () {
 Route::any('home', 'HomeController@view');
 
 Route::any('profile', 'ProfileController@view');
+Route::any('login', 'Auth\AuthController@login');
+Route::any('register', 'Auth.AuthController@register');
 
 Route::any('mobile', 'MobileController@view');
 

@@ -56,6 +56,24 @@ class AuthController extends Controller
     }
 
     /**
+     * Login
+     *
+     */
+    protected function login()
+    {
+        return view('account/login');
+    }
+
+    /**
+     * Register
+     *
+     */
+    protected function register()
+    {
+        return view('account/register');
+    }
+
+    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
