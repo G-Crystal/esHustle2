@@ -72,3 +72,7 @@ div.checkbox input[type="checkbox"] {
     height: 34px;
     margin-top: 0;
 }
+
+div.table-overflow {
+    overflow: auto;
+}
