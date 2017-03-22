@@ -21,6 +21,10 @@ Route::get('/', function () {
 
 Route::any('home', 'HomeController@view');
 
+Route::any('profile', 'ProfileController@view');
+
 Route::any('mobile', 'MobileController@view');
 
-Route::any('profile', 'ProfileController@view');
+Route::any('option', 'OptionController@view');
+
+Route::any('support', 'SupportController@view');
