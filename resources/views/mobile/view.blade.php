@@ -155,7 +155,9 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
-              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#newApp" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+              <div class="col-xs-12">
+                  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#newApp" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+              </div>
             </div>
             <!-- /.box-footer -->
           </div>
