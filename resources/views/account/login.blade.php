@@ -14,30 +14,21 @@
       <div class="form-group form-ctrl row">
         <label for="inputEmail" class="col-sm-4 control-label">Email</label>
         <div class="col-sm-8">
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control pr-30" placeholder="Email">
             <span class="glyphicon glyphicon-envelope form-control-feedback mr-15"></span>
         </div>
       </div>
       <div class="form-group form-ctrl row">
         <label for="inputPassword" class="col-sm-4 control-label">Password</label>
         <div class="col-sm-8">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" class="form-control pr-30" placeholder="Password">
             <span class="glyphicon glyphicon-lock form-control-feedback mr-15"></span>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label class="ml-20">
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
+        <div class="col-xs-offset-3 col-xs-6">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
-        <!-- /.col -->
       </div>
     </form>
 
