@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="sidebar-mini wysihtml5-supported layout-boxed skin-yellow-light">
 <div class="wrapper">
 
   <header class="main-header">
