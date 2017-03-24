@@ -28,7 +28,7 @@
 <body class="login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="/">ez<b>Hustle</b></a>
+    <a href="/"><span class="logo-lg"><img src="/assets/img/logo.png" alt="ezHustle" title="ezHustle" width="50" height="50">ez<b>Hustle</b></a>
   </div>
 
 @yield('content')
@@ -39,9 +39,10 @@
 <!-- jQuery 2.2.4 -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!-- jQuery UI 1.12.0 -->
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<!--<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>-->
 <!-- Bootstrap 3.3.7 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script>
   $(function () {
     $('input').iCheck({
