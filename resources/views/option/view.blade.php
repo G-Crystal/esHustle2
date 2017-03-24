@@ -98,16 +98,6 @@
                     </td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <th>Name</th>
-                    <th>Books</th>
-                    <th>DVD</th>
-                    <th>VHS</th>
-                    <th>Other</th>
-                    <th></th>
-                  </tr>
-                </tfoot>
               </table>
               </div>
             </div>

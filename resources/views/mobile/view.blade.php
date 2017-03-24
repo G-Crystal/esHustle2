@@ -132,24 +132,6 @@
                     </td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <th rowspan="2">User Name</th>
-                    <th rowspan="2">Device</th>
-                    <th rowspan="2">Password(s)</th>
-                    <th rowspan="2">Offline</th>
-                    <th rowspan="2">ScouterMode</th>
-                    <th colspan="2">Primary Market</th>
-                    <th colspan="2">Secondary Market</th>
-                    <th rowspan="2"></th>
-                  </tr>
-                  <tr>
-                    <th>Advisor</th>
-                    <th>Market</th>
-                    <th>Advisor</th>
-                    <th>Market</th>
-                  </tr>
-                </tfoot>
               </table>
               </div>
             </div>
