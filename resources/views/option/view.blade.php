@@ -9,7 +9,7 @@
 
 @section('content')
     <section class="content-header">
-      <h1>Option AA</h1>
+      <h1>ezAdvisor &reg;</h1>
     </section>
 
     <!-- Main content -->
