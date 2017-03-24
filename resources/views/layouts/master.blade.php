@@ -91,7 +91,7 @@
         </li>
         <li>
           <a href="/option">
-            <i class="fa fa-edit"></i> <span>OptionAA</span>
+            <i class="fa fa-edit"></i> <span>ezAdvisor &reg;</span>
           </a>
         </li>
         <li>
