@@ -44,6 +44,10 @@ div.dataTables_wrapper > div:nth-child(2) > div {
     color: #97a0b3;
 }
 
+.btn-box-tool {
+    font-size: 14px;
+}
+
 .modal-header {
     border-bottom: 1px solid #e5e5e5;
 }
