@@ -51,7 +51,7 @@
                     <td class="text-center">X</td>
                     <td>Win 95+</td>
                     <td class="text-center"> 4</td>
-                    <td class="text-center">
+                    <td class="text-center modbile-action-btn-td">
                       <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
@@ -73,7 +73,7 @@
                     <td class="text-center">X</td>
                     <td>Win 95+</td>
                     <td class="text-center"> 4</td>
-                    <td class="text-center">
+                    <td class="text-center modbile-action-btn-td">
                       <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
@@ -95,7 +95,7 @@
                     <td class="text-center">C</td>
                     <td>Win 95+</td>
                     <td class="text-center">5</td>
-                    <td class="text-center">
+                    <td class="text-center modbile-action-btn-td">
                       <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
@@ -119,7 +119,7 @@
                     <td class="text-center">C</td>
                     <td>Win 95+</td>
                     <td class="text-center">5</td>
-                    <td class="text-center">
+                    <td class="text-center modbile-action-btn-td">
                       <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="modal" data-target="#editApp" aria-expanded="false" title="Edit Mobile App">
                         <i class="fa fa-gear" aria-hidden="true"></i>
                       </button>
