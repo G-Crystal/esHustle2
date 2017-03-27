@@ -76,6 +76,10 @@ div.table-overflow {
     overflow: auto;
 }
 
+.modbile-action-btn-td {
+    min-width: 75px;
+}
+
 .mt-11 {
     margin-top: 11px !important;
 }
