@@ -14,9 +14,9 @@ class CreateMarketplacesTable extends Migration
     {
         Schema::create('marketplaces', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('marketplace');
-            $table->string('region');
-            $table->string('endpoint');
+            $table->string('marketplace', 45);
+            $table->string('region', 45);
+            $table->string('endpoint', 45);
             $table->timestamps();
         });
     }
