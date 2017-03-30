@@ -22,13 +22,17 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@view');
 
 Route::get('profile', 'ProfileController@view');
-Route::get('login', 'Auth\AuthController@login');
-Route::post('login', 'Auth\AuthController@postlogin');
-Route::get('register', 'Auth\AuthController@register');
-Route::post('register', 'Auth\AuthController@create');
+Route::get('signin', 'Auth\AuthController@signin');
+Route::post('signin', 'Auth\AuthController@postsignin');
+Route::get('signup', 'Auth\AuthController@signup');
+Route::post('signup', 'Auth\AuthController@postsignup');
 
 Route::get('mobile', 'MobileController@view');
 
 Route::get('option', 'OptionController@view');
 
 Route::get('support', 'SupportController@view');
+
+// Route::auth();
+
+Route::get('/home', 'HomeController@index');
