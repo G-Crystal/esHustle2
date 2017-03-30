@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@view');
 
 Route::get('profile', 'ProfileController@view');
+Route::get('login', function () { return redirect('/signin'); });
 Route::get('signin', 'Auth\AuthController@signin');
 Route::post('signin', 'Auth\AuthController@postsignin');
 Route::get('signup', 'Auth\AuthController@signup');
@@ -35,4 +36,3 @@ Route::get('support', 'SupportController@view');
 
 // Route::auth();
 
-Route::get('/home', 'HomeController@index');
