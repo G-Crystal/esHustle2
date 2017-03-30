@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+use App\Marketplaces;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
@@ -59,16 +61,16 @@ class AuthController extends Controller
      * Login
      *
      */
-    protected function login()
+    protected function signin()
     {
-        return view('account/login');
+        return view('account/signin');
     }
 
     /**
      * Login
      *
      */
-    protected function postlogin()
+    protected function postsignin()
     {
         return true;
     }
@@ -77,9 +79,10 @@ class AuthController extends Controller
      * Register
      *
      */
-    protected function register()
+    protected function signup()
     {
-        return view('account/register');
+
+        return view('account.signup', ['markets' => Marketplaces::all()]);
     }
 
     /**
@@ -88,12 +91,15 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    protected function postsignup(Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        dd($request);
+        exit(1);
+        $account = new Account();
+        $account->email = $request['email'];
+        $account->password = $request['password'];
+        $account->save();
+
+        return redirect()->back();
     }
 }
